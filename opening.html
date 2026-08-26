@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>افتتاحیه داروخانه دکتر غلامی</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f0ebe5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Tahoma, sans-serif;
+        }
+
+        .card {
+            max-width: 520px;
+            width: 100%;
+            background: #ffffff;
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.10);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .hint {
+            margin-top: 14px;
+            font-size: 13px;
+            color: #5a6a78;
+            background: #f5f1ec;
+            padding: 8px 16px;
+            border-radius: 40px;
+            display: inline-block;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 12px;
+            }
+            .hint {
+                font-size: 11px;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+
+        <!-- ================================================= -->
+        <!--  اینجا از Image Map استفاده شده که فقط دکمه‌ی داخل عکس قابل کلیک باشد -->
+        <!-- ================================================= -->
+
+        <img src="2.png" 
+             alt="افتتاحیه داروخانه دکتر غلامی" 
+             usemap="#map" />
+
+        <map name="map">
+            <!-- 
+                محدوده‌ای که دکمه "مشاهده لوکیشن و مسیریابی" در عکس قرار دارد.
+                این مختصات تقریبی است و بسته به اندازه و جایگاه دکمه در عکس شما،
+                ممکن است نیاز به تنظیم داشته باشد.
+            -->
+            <area shape="rect" 
+                  coords="115, 660, 400, 612" 
+                  href="https://maps.app.goo.gl/8PRu2RGRhPDCW9Az9" 
+                  target="_blank" 
+                  alt="مشاهده لوکیشن و مسیریابی" 
+                  title="مشاهده لوکیشن و مسیریابی" />
+        </map>
+
+    </div>
+
+</body>
+</html>
