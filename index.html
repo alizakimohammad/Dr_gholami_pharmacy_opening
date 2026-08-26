@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>افتتاحیه داروخانه دکتر غلامی</title>
+
     <style>
         * {
             margin: 0;
@@ -16,6 +17,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            min-height: 100vh;
             font-family: Tahoma, sans-serif;
         }
 
@@ -27,58 +29,59 @@
             text-align: center;
         }
 
-        .card img {
+        .image-wrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        .image-wrapper img {
             width: 100%;
             height: auto;
             display: block;
         }
 
-        .hint {
-            margin-top: 14px;
-            font-size: 13px;
-            color: #5a6a78;
-            background: #f5f1ec;
-            padding: 8px 16px;
-            border-radius: 40px;
-            display: inline-block;
+        .location-link {
+            position: absolute;
+
+            /* جای دکمه نسبت به تصویر */
+            left: 22%;
+            top: 79%;
+
+            width: 55%;
+            height: 6%;
+
+            display: block;
+            cursor: pointer;
         }
 
         @media (max-width: 480px) {
             .card {
-                padding: 12px;
-            }
-            .hint {
-                font-size: 11px;
-                padding: 6px 12px;
+                width: 100%;
             }
         }
     </style>
 </head>
+
 <body>
 
     <div class="card">
 
-        <!-- ================================================= -->
-        <!--  اینجا از Image Map استفاده شده که فقط دکمه‌ی داخل عکس قابل کلیک باشد -->
-        <!-- ================================================= -->
+        <div class="image-wrapper">
 
-        <img src="2.png" 
-             alt="افتتاحیه داروخانه دکتر غلامی" 
-             usemap="#map" />
+            <img 
+                src="2.png"
+                alt="افتتاحیه داروخانه دکتر غلامی"
+            />
 
-        <map name="map">
-            <!-- 
-                محدوده‌ای که دکمه "مشاهده لوکیشن و مسیریابی" در عکس قرار دارد.
-                این مختصات تقریبی است و بسته به اندازه و جایگاه دکمه در عکس شما،
-                ممکن است نیاز به تنظیم داشته باشد.
-            -->
-            <area shape="rect" 
-                  coords="115, 660, 400, 612" 
-                  href="https://maps.app.goo.gl/8PRu2RGRhPDCW9Az9" 
-                  target="_blank" 
-                  alt="مشاهده لوکیشن و مسیریابی" 
-                  title="مشاهده لوکیشن و مسیریابی" />
-        </map>
+            <a
+                class="location-link"
+                href="https://maps.app.goo.gl/8PRu2RGRhPDCW9Az9"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="مشاهده لوکیشن و مسیریابی"
+            ></a>
+
+        </div>
 
     </div>
 
