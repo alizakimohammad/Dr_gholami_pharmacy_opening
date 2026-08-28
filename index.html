@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>افتتاحیه داروخانه دکتر غلامی</title>
 
     <style>
@@ -19,38 +17,27 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
-            width: 100vw;
-            height: 100vh;
-
-            overflow: hidden;
-
+            min-height: 100vh;
             font-family: Tahoma, sans-serif;
         }
 
         .card {
-            height: 100vh;
             max-width: 520px;
-            width: auto;
-
+            width: 100%;
             background: #ffffff;
             box-shadow: 0 16px 48px rgba(0, 0, 0, 0.10);
+            text-align: center;
         }
 
         .image-wrapper {
             position: relative;
-            height: 100%;
+            width: 100%;
         }
 
         .image-wrapper img {
+            width: 100%;
+            height: auto;
             display: block;
-
-            width: auto;
-            height: 100vh;
-
-            max-width: 100vw;
-
-            object-fit: contain;
         }
 
         .location-link {
@@ -60,7 +47,7 @@
             left: 25%;
             top: 81%;
 
-            width: 50%;
+            width: 49%;
             height: 6%;
 
             display: block;
@@ -70,13 +57,6 @@
         @media (max-width: 480px) {
             .card {
                 width: 100%;
-                height: 100vh;
-            }
-
-            .image-wrapper img {
-                width: 100%;
-                height: 100vh;
-                object-fit: contain;
             }
         }
     </style>
@@ -88,7 +68,7 @@
 
         <div class="image-wrapper">
 
-            <img
+            <img 
                 src="1.png"
                 alt="افتتاحیه داروخانه دکتر غلامی"
             />
@@ -98,13 +78,12 @@
                 href="https://www.google.com/maps/search/?api=1&query=37.255278%2C49.946225"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="مشاهده لوکیشن و مسیریابی">
-            </a>
+                aria-label="مشاهده لوکیشن و مسیریابی"
+            ></a>
 
         </div>
 
     </div>
 
 </body>
-
 </html>
